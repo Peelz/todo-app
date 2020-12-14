@@ -13,7 +13,7 @@ const Routes = (props) => {
     <Router history={createBrowserHistory()}>
       <Switch>
         {routes.map((route) => (
-          <Route {...route}></Route>
+          <Route key={route.path} {...route}></Route>
         ))}
       </Switch>
     </Router>
